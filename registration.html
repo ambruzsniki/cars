@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Regisztráció</title>
+    <link rel="stylesheet" href="site.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <ul>
+        <li>
+          <a href="index.html">Főoldal</a>
+        </li>
+        <li>
+          <a href="registration.html" class="active">Regisztráció</a>
+        </li>
+        <li>
+          <a href="addcar.html">Autó hozzáadása</a>
+        </li>
+      </ul>
+    </div>
+    <h1>Regisztráció</h1>
+    <form id="registration" action="index.html" method="post">
+      <label for="username">Felhasználónév</label>
+      <input type="text" name="username" id="username" required>
+      <label for="password">Jelszó</label>
+      <input type="password" name="password" id="password" required>
+      <label for="re-password">Jelszó újra</label>
+      <input type="password" name="re-password" id="re-password" required>
+      <label for="name">Név</label>
+      <input type="text" name="name" id="username">
+      <label for="email">E-mail cím</label>
+      <input type="email" name="email" id="email">
+      <label for="phonenumber">Telefonszám</label>
+      <input type="tel" name="phonenumber" id="phonenumber">
+      <label for="birthday">Születési idő</label>
+      <input type="date" name="birthday" id="birthday" min="1920-01-01" max="2003-01-01">
+      <input type="submit" value="Beküldés">
+    </form>
+  </body>
+</html>

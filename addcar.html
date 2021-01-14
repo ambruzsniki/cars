@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Autó rögzítése</title>
+    <link rel="stylesheet" href="site.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <ul>
+        <li>
+          <a href="index.html">Főoldal</a>
+        </li>
+        <li>
+          <a href="registration.html">Regisztráció</a>
+        </li>
+        <li>
+          <a href="addcar.html" class="active">Autó hozzáadása</a>
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <h1>Autó rögzítése</h1>
+      <form id="add-car" action="index.html" method="post">
+        <div class="type">
+          <label for="type">Jármű típusa</label>
+          <input type="text" name="type" id="type" value="autó" readonly>
+        </div>
+        <div class="brand">
+          <label for="brand">Márka</label>
+          <select id="brand" name="brand">
+            <option value="audi">Audi</option>
+            <option value="bmw">BMW</option>
+            <option value="ferrari">Ferrari</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="Tesla">Tesla</option>
+          </select>
+        </div>
+        <div class="date">
+          <label for="date">Forgalomba került</label>
+          <input type="date" id="date" name="date" min="2000-01-01">
+        </div>
+        <div class="year">
+          <label for="year">Évjárat</label>
+          <input type="number" name="year" value="2021" min="2000" max="2021">
+        </div>
+        <div class="color">
+          <label for="color">Szín</label>
+          <input type="color" name="color" id="color" value="#ff0000">
+        </div>
+        <div class="doors">
+          <label for="doors">Ajtók száma</label>
+          <input type="number" name="doors" id="doors" min="1" max="5">
+        </div>
+        <input type="submit" value="Beküldés">
+      </form>
+    </div>
+  </body>
+</html>
