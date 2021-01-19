@@ -66,3 +66,7 @@ li a.active {
   color: white;
   background-color: #32a8a8;
 }
+
+.auto-width {
+  width: 100%;
+}
